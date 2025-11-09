@@ -716,13 +716,17 @@ const renderMap = () => {
       geometry: searchPoint,
       symbol: {
         type: "simple-marker",
-        style: "cross",
-        color: [255, 0, 0, 0.9],
-        size: 24,
-        outline: { color: [255, 255, 255], width: 4 },
+        style: "circle",
+        size: 16,
+        color: [255, 69, 58, 0.9], // bright red
+        outline: {
+          color: [255, 255, 255, 9],
+          width: 3,
+        },
       },
       attributes: { type: "search_location" },
     });
+
     graphicsLayer.add(searchGraphic);
 
     // Radius circle (FIXED: uses correct Circle geometry)
