@@ -1,4 +1,3 @@
-<!-- hail-size.vue -->
 <script setup>
 import { ref, onMounted, watch, nextTick, computed } from "vue";
 import Papa from "papaparse";
